@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  finvivirdb:
+    image: mysql/mysql-server:5.6
+    environment:
+      MYSQL_ROOT_PASSWORD: Test12345
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: testDb
+    ports:
+      - 33099:3306
